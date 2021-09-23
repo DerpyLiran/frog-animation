@@ -1,3 +1,3 @@
-# Example File
+# This is a little code I made to help understand classes and animations with pygame
 
-This is a sample read me file
+run the frog_animation.py and enjoy!
