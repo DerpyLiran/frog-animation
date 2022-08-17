@@ -15,6 +15,9 @@ moving_sprites = pygame.sprite.Group()
 frog_player = FrogPlayer(0, screen_height)
 moving_sprites.add(frog_player)
 
+# Sounds
+pop = pygame.mixer.Sound("pop.mp3")
+
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -23,6 +26,8 @@ while True:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
                 frog_player.animate()
+                pygame.mixer.Sound.play(pop)
+                pygame.mixer.music.stop()
     
     # Drawing our stuff to the screen
     win.fill((50, 50, 50))
