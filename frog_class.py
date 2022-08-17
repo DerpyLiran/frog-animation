@@ -51,7 +51,7 @@ class FrogPlayer(pygame.sprite.Sprite):
             # This increments the current_sprite image by one to produce an animation *
             # We can use the int() function to increment over the images slowly so that we can get a smoother animation
             # BUT we will call the int() func at the end bc we need image to be updates and not current sprite
-            # (also it wont work)
+            # (also it won't work)
             # We can also set the parameter manually in our main code when we call the function
             self.current_sprite += speed
             # We need this to go back to the first INDEX of the image after the last one in the list has been reached

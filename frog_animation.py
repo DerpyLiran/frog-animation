@@ -23,8 +23,6 @@ while True:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
                 frog_player.animate()
-
-
     
     # Drawing our stuff to the screen
     win.fill((50, 50, 50))
