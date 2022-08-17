@@ -45,7 +45,7 @@ class FrogPlayer(pygame.sprite.Sprite):
         elif keys[pygame.K_d]:
             self.rect.x += 5    
 
-    def update(self, speed=0.2):
+    def update(self, speed=0.3):
         self.get_keys()
         if self.is_animating:
             # This increments the current_sprite image by one to produce an animation *
